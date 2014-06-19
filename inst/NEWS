@@ -1,0 +1,71 @@
+Package: R.colors
+=================
+
+Version: 0.6.0 [2013-02-07]
+o Package passes R CMD check on R v2.15.2.
+o Updated package to have a NAMESPACE.
+
+
+Version: 0.5.5 [2010-11-28]
+o Package passes R CMD check on R v2.12.0.
+o Using packageStartupMessage() instead of cat().
+o Updated broken Rd cross links.
+o Removed the dependency on the colorspace package.
+
+
+Version: 0.5.4 [2008-07-12]
+o Renamed HISTORY to NEWS.
+o Fixed encoding error in one Rd file.
+o Package pass R CMD check on R v2.7.1 and R v2.8.0 devel.
+
+
+Version: 0.5.3 [2007-05-09]
+o Now package pass R CMD check on R v2.5.0.
+o BUG FIX: The HclColor class was broken.  Removed the 
+  'deviceGamma' argument.
+
+
+Version: 0.5.2 [2006-02-10]
+o Example for wavelengthColor requires that the R.basic package
+  is updated.  No other modifications has been done.
+
+
+Version: 0.5.1 [2005-10-27]
+o Package passes R CMD check on R v2.2.0.
+o Added color classes ExcelColor and VGAColor.
+
+
+Version: 0.5 [2005-02-25]
+o With the setMethodS3() in R.oo v1.0.2, this package now passes
+  R CMD check without warnings.
+o Forgot to remove internal hcl(), but now the hcl() in colorspace
+  is used and nothing else.
+
+
+Version: 0.4 [2005-02-16]
+o Now making use of hcl() in colorspace (now on CRAN) instead of 
+  a cut'n'pasted version of it.
+
+
+Version: 0.3 [2004-10-18]
+o Added more help pages.
+o Renamed text() of the Color class to imageText().
+
+
+Version: 0.2 [2003-12-10]
+o Added plotParallel() to the Color class.
+o If the 'hue' is not given in HsvgColor(), all other color 
+  arguments are ignored. This makes it easy to create an 
+  empty color.
+o BUG FIX: Argument 'filter' in getColors() for
+  TwoChannelMicroarrayData was not TRUE, but FALSE.
+
+
+Version: 0.1 [2003-11-20]
+o Created with inspiration of old Colors class in R.graphics.
+  One purpose of it was to get a foundation to easily generate
+  graphs through different color filters. One such filter of 
+  interest is the DichromatColorFilter (based on Thomas Lumley's
+  package), which provides an easy way to check how color blind
+  people perceives your graphs. This is especially important in
+  red-green microarray analysis.

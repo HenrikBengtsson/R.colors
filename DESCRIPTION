@@ -1,0 +1,12 @@
+Package: R.colors
+Version: 0.6.0
+Date: 2013-02-07
+Title: Color and color filter classes
+Author: Henrik Bengtsson <henrikb@braju.com>
+Maintainer: Henrik Bengtsson <henrikb@braju.com>
+Depends: R (>= 2.10.0), R.methodsS3 (>= 1.2.1), R.oo (>= 1.7.4), R.basic (>= 0.50.0)
+Suggests: dichromat (>= 1.2-3)
+Description: Contains color and color filter classes.
+License: LGPL (>= 2.1)
+URL: http://www.braju.com/R/
+LazyLoad: TRUE
